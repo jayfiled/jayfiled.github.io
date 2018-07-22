@@ -1,0 +1,74 @@
+/* Muck around with colour scheme */
+:root {
+  --background: #f5f6fa;
+  --nav: #192a56;
+  --navtext: #f5f6fa;
+  --text: #192a56;
+  --logo: #1dd1a1;
+}
+
+body {
+  background: var(--background);
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.13em;
+  color: var(--text);
+  margin: 0;
+  overflow: hidden;
+}
+
+#header {
+  top: 0;
+  background: var(--nav);
+  width: 100%;
+  height: 5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+  
+#nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  color: var(--navtext);
+  font-weight: 700;
+}
+
+li {
+  padding: 1em 9em 1em 9em;
+  list-style-type: none;
+  justify-content: space-around;
+  align-self: center;
+  transition: .2s ease-out;
+}
+
+li:hover {
+  font-size: 1.3em;
+/*   border: .2em solid var(--text); */
+/*   margin: 0em 1em 0em 1em; */
+  transition .7s ease-out;
+}
+
+#logo {
+  height: 100%;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+#section1 {
+  margin: 0;
+  background: #d13475;
+  width: 100%;
+  height: 25em;
+  left: 0;
+  top: 5;
+}
+
+#section2 {
+  background: #77d434;
+  width: 100%;
+  height: 25em;
+  
+}
