@@ -22,6 +22,8 @@ body {
 
 
 #header {
+  position: fixed;
+  z-index: 1;
   top: 0px;
   background: var(--nav);
   width: 100%;
@@ -29,48 +31,67 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  align-content: center;
+  overflow: auto;
+  /* border: 1px dashed; */
 }
 
 #header-img {
   padding-right: 25%;
   padding-left: 5%;
+  /* border: 1px red dashed;   */
   
 }
   
-#nav-bar > * {
+#nav-bar {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-items: flex-start;
+  align-items: center;
   color: var(--navtext);
   font-weight: 700;
-  padding-top: 4%;
+  /* border: 1px red dashed; */
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  transition: .2s ease-out;
+  /* border: 1px yellow dashed; */
+  width: 4fr;
 }
 
 li {
-  padding: 1em 2em 1em 2em;
-  list-style-type: none;
-  transition: .2s ease-out;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
-li:hover {
-  font-size: 1.1em;
-/*   border: .2em solid var(--text); */
-/*   margin: 0em 1em 0em 1em; */
-  transition: .1s ease-out;
+a {
+  text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.13em;
+  color: var(--text);
 }
 
-.active {
-  border-radius: 500px;
-  box-shadow: 2px 2px 3px rgba(25, 25, 25, 0.19), -2px -2px 3px rgba(25, 25, 25, 0.19);
-}
+a:hover {
+/* I don't want the text to move when something is enlarged - https://stackoverflow.com/questions/45269760/flexbox-buttons-shifting-when-on-hover-with-after-element */
+  font-size: 1.2em;
+  text-decoration: underline;
+  content: "";
+
+} */
 
 h1 {
   font-size: 3em;
 }
 
 #section1 {
+  position: absolute;
   background: #dff9fb;
   width: 100%;
+  top: 4em;
   height: 45em;
 }
 
