@@ -18,13 +18,6 @@
 
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-<!-- Functionally similar to https://codepen.io/freeCodeCamp/full/RKRbwL
-
-  style like: https://store.google.com/product/pixel_2
-
-- Use Flexbox
--->
-
 <!-- Sticky nav -->
 
 <div id="header">
@@ -43,23 +36,73 @@
   <img src="./Resources/black-pixel-3-xl-render.jpg" class="overview" />
 </div>
 
-<div id="intro">
-  <p id="intro-header">Introducing the new Pickle 3</p>
+<div class="blurb">
+  <p class="blurb-header">Introducing the new Pickle 3</p>
 
-  <p id="intro-paragraph">So much pickle, now with less Rick</p>
+  <p class="blurb-paragraph">So much pickle, now with less Rick</p>
   </div>
 
 <div id="techspecs">
+  <div id="img-overview-overlay-specs">
+    <p>Display: 6"</p>
+    <p>SOC: Snapdragon 920</p>
+    <p>Audio: 32-bit DAC</p>
+    <p>Screen to body ratio: 90%</p>
+    <p>Connectivity: 5G, 102.88 wireless AC, Bluetooth 5.0, NFC</p>
+    
+  </div>
   <img src="./Resources/pixel-3-and-3-xl-renders.jpg" class="tech-specs" />
 </div>
 
-<div id="buy">
+<div class="blurb">
+    <p class="blurb-header">Your assistant knows you</p>
+  
+    <p class="blurb-paragraph">"Hey Google.. "</p>
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hImLXy4qd6k?rel=0&amp;controls=0&amp;showinfo=0&amp;start=15" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <p class="m-chat">".. message Sarah and ask her 'what's up?'" </p>
+
+    <p class="g-chat">"OK, messaging Sarah to ask her if you can come over" </p>
+
+    </div>
+
+<div id="features">
+
+<iframe id="video" src="https://www.youtube-nocookie.com/embed/hImLXy4qd6k?rel=0&amp;controls=0&amp;showinfo=0&amp;start=15" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 <img src="./Resources/white-pixel-3-render.jpg" alt="white-pixel-3-render" />
   
 </div>
+
+<!-- A static shopping form, on the checkout step designed from: https://dribbble.com/shots/2872460-082-DailyUI-Form-->
+<div id="form" class="buy">
+  <ul class="checkout-progress"> <!-- li will be transparent except for the li to give the impression that it we are on the checkout step of payment -->
+    <li>Shopping Bag</li>
+    <li id="li-active">Checkout</li>
+    <li>Confirmation</li>
+  </ul>
+  <!-- Form left hand side with personal information entry-->
+  <div id="form-left">
+    <label for="form-header">Personal Information</label>
+    <label for="first-name"></label>
+    <input id="first-name" type="text">
+    
+  </div>
+  <!-- Form right hand side with an option to choose the XL or standard and credit card and submit -->
+  <div id="form-right">
+
+  </div>
+</div>
+
+
+
+<!-- User Story #7: My landing page has a form element with a corresponding id="form".
+User Story #8: Within the form, there is an input field with id="email" where I can enter an email address.
+User Story #9: The #email input field should have placeholder text to let the user know what the field is for.
+User Story #10: The #email input field uses HTML5 validation to confirm that the entered text is an email address.
+User Story #11: Within the form, there is a submit input with a corresponding id="submit".
+User Story #12: When I click the #submit element, the email is submitted to a static page 
+  (use this mock URL: https://www.freecodecamp.com/email-submit) that confirms the email address was entered
+       and that it posted successfully. -->
 
 </body>
 
