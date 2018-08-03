@@ -207,7 +207,6 @@ iframe {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2em 1fr;
   grid-gap: 5px;
-  border: 1px dashed;
   grid-template-areas:
     "header header"
     "left right"
@@ -217,8 +216,7 @@ iframe {
   display: grid;
   grid-area: left;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(10, 1fr);
-  border: 1px dashed salmon;
+  grid-template-rows: repeat(10, auto);
 
 }
 
@@ -227,13 +225,11 @@ iframe {
   grid-area: right;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(6, 1fr);
-  border: 1px dashed seagreen;
 }
 
 ul.checkout-progress {
   grid-area: header;
   justify-self: center;
-  border: 1px dashed slateblue;
   list-style: none;
 }
 ul.checkout-progress li {
@@ -243,4 +239,9 @@ ul.checkout-progress li {
 ul.checkout-progress li+li:before {
   padding-right: 2.2em;
   content: ">";
+}
+
+#form-left p {
+  grid-column: span 2 / 3;  /* span 2 columns, finish at 3 */
+  justify-self: center;
 }
