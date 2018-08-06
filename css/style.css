@@ -209,7 +209,7 @@ iframe {
   grid-gap: 5px;
   grid-template-areas:
     "header header"
-    "left right"
+    "left right";
 }
 
 #form-left {
@@ -217,7 +217,9 @@ iframe {
   grid-area: left;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(10, auto);
-
+  grid-gap: 5px;
+  background-color: #dfe6e9;
+  border-radius: 10px;
 }
 
 #form-right {
@@ -244,4 +246,15 @@ ul.checkout-progress li+li:before {
 #form-left p {
   grid-column: span 2 / 3;  /* span 2 columns, finish at 3 */
   justify-self: center;
+}
+
+#personal-phone {
+  display: grid;
+  grid-column: span 2 / -1;
+  justify-self: start;
+  justify-items: start; 
+}
+
+#personal-phone > input {
+  justify-content: 
 }
