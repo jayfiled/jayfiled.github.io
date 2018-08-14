@@ -75,7 +75,6 @@ a {
   font-size: 1.2em;
   color: var(--text);
   font-weight: 900;
-  transition: .9s;
 }
 
 a:hover {
@@ -204,39 +203,44 @@ iframe {
 
 #form {
   position: relative;
-  left: 2em;
+  padding: 1em;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2em 1fr;
+  grid-template-rows: auto auto;
   grid-gap: 5px;
   grid-template-areas:
     "header header"
     "left right";
-    background-color: #ff7675;
+    background-color: #2d3436;
 }
 
 #form-left {
   position: relative;
-  padding: 1em;
   display: grid;
   grid-area: left;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(10, auto);
   grid-gap: 5px;
-  background-color: #dfe6e9;
-  border-radius: 10px;
+  padding: 1em;
+  background-color: #74b9ff;
+  border-radius: 2px;
 }
 
 #form-right {
   display: grid;
   grid-area: right;
-  grid-template-columns: 1fr 1fr;
+  padding: 1em;
+  grid-gap: 5px;
+  background-color: #74b9ff;
+  border-radius: 2px;
+  grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(6, 1fr);
 }
 
 ul.checkout-progress {
   grid-area: header;
   justify-self: center;
+  padding-bottom: .5em;
   list-style: none;
 }
 ul.checkout-progress li {
@@ -246,6 +250,7 @@ ul.checkout-progress li {
 ul.checkout-progress li+li:before {
   padding-right: 2.2em;
   content: ">";
+  font-weight: 900px;
 }
 
 #form-left p {
@@ -253,12 +258,50 @@ ul.checkout-progress li+li:before {
   justify-self: center;
 }
 
+#form-right p {
+  grid-column: span 10 / -1;  /* span 2 columns, finish at 3 */
+  justify-self: center;
+}
+
+#form-right .pickle-std {
+  display: grid;
+  grid-column: span 2 / 5;
+  grid-row: span 2 / 4;
+  justify-content: center;
+  align-content: center;
+  background-color: #6c5ce7;
+  border-radius: 2px;
+  color:  #2d3436;
+}
+
+#form-right .pickle-xl {
+  display: grid;
+  grid-column: span 2 / 9;
+  grid-row: span 2 / 4;
+  justify-content: center;
+  align-content: center;
+  background-color: #6c5ce7;
+  border-radius: 2px;
+  color:  #2d3436;
+}
+
+#form-right input {
+  grid-column: span 6 / 9;
+  grid-row: span 2 / 7;
+  background-color: #6c5ce7;
+  border: 0;
+  border-radius: 2px;
+  font-size: 3em;
+  color:  #2d3436;
+}
+
 .form-headers {
   font-size: 1.2em;
-  color: #636e72;
+  color:  #2d3436;
 }
 
 .form-label-text {
+  color: #2d3436;
   font-weight: 900px;
 }
 

@@ -76,9 +76,9 @@
 <!-- A static shopping form, on the checkout step designed from: https://dribbble.com/shots/2872460-082-DailyUI-Form-->
 <div id="form" class="buy">
   <ul class="checkout-progress"> <!-- li will be transparent except for the li to give the impression that it we are on the checkout step of payment -->
-    <li>Shopping Bag</li>
-    <li id="li-active">Checkout</li>
-    <li>Confirmation</li>
+    <li><a href="#">Bag</a></li>
+    <li id="li-active"><a href="#">Checkout</a></li>
+    <li><a href="#">Confirmation</a></li>
   </ul>
   <!-- Form left hand side with personal information entry-->
   <div id="form-left">
@@ -109,6 +109,16 @@
   </div>
   <!-- Form right hand side with an option to choose the XL or standard and credit card and submit -->
   <div id="form-right">
+      <p class="form-headers">Payment and selection</p>
+      <div class="pickle-std">
+        <p>STD</p>
+        <p>PICKLE</p>
+      </div>
+      <div class="pickle-xl">
+        <p>XL</p>
+        <p>PICKLE</p>
+      </div>
+      <input type="button" name="submit" class="checkout-submit" placeholder="Submit" value="Submit">
 
   </div>
 </div>
