@@ -247,11 +247,26 @@ ul.checkout-progress li {
   display: inline;
   font-size: 18px;
 }
+
+/* <div id="form" class="buy">
+  <ul class="checkout-progress"> <!-- li will be transparent except for the li to give the impression that it we are on the checkout step of payment -->
+    <li><a href="#">Shopping Bag</a></li>
+    <li class="li-active"><a href="#">Checkout</a> */
+
+.li-active a {
+  display: inline;
+  background: #636e72;
+  padding: .2em;
+  border-radius: 500px;
+  color: white;
+}
+
 ul.checkout-progress li+li:before {
   padding-right: 2.2em;
   content: ">";
   font-weight: 900px;
 }
+
 
 #form-left p {
   grid-column: span 2 / 3;  /* span 2 columns, finish at 3 */
