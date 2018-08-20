@@ -1,4 +1,5 @@
 To-do:
+- Make responsive
 - Fix the horizontal scroll bar
 - CSS padding for speech bubbles
 - Hover for header links
