@@ -73,8 +73,6 @@
   
 </div>
 
-<p>The below grid design is <em>not</em> finished yet..</p>
-
 <!-- A static shopping form, on the checkout step designed from: https://dribbble.com/shots/2872460-082-DailyUI-Form-->
 <div id="form" class="buy">
   <ul class="checkout-progress"> <!-- li will be transparent except for the li to give the impression that it we are on the checkout step of payment -->
@@ -114,15 +112,19 @@
   <!-- Form right hand side with an option to choose the XL or standard and credit card and submit -->
   <div id="form-right">
       <p class="form-headers">Payment and selection</p>
-      <div class="pickle-std">
-        <p>std</p>
-        <p>pickle</p>
-      </div>
-      <div class="pickle-xl">
+      <a href="#" class="pickle-std">
+        <div>
+          <p>std</p>
+          <p>pickle</p>
+        </div>
+      </a>
+      <a href="#" class="pickle-xl">
+        <div>
         <p>xl</p>
         <p>pickle</p>
-      </div>
-      <input type="button" name="submit" class="checkout-submit" placeholder="Submit" value="Submit">
+        </div>
+      </a>
+      <input type="button" name="submit" class="checkout-submit" placeholder="Submit" value="Purchase">
 
   </div>
 </div>
