@@ -264,6 +264,13 @@ ul.checkout-progress li {
     <li><a href="#">Shopping Bag</a></li>
     <li class="li-active"><a href="#">Checkout</a> */
 
+
+.checkout-progress li .li-active {
+  opacity: 1;
+}
+
+/* add active to opacity 1 */
+
 .li-active a {
   display: inline;
   background: rgba(220, 221, 225,1.0);
@@ -279,9 +286,7 @@ ul.checkout-progress li {
 ul.checkout-progress li+li:before {
   padding: 2.2em;
   content: ">";
-  font-weight: 900px;
 }
-
 
 #form-left p {
   grid-column: span 2 / 3;  /* span 2 columns, finish at 3 */
@@ -334,13 +339,13 @@ ul.checkout-progress li+li:before {
   box-shadow: .2em .2em .3em rgba(53, 59, 72,0.19), -.2em -.2em .3em rgba(53, 59, 72,0.19);
   border: 0;
   border-radius: 2px;
-  font-size: 3em;
+  font-size: 2em;
   color:  #2d3436;
   transition-duration: .4s;
 }
 
 #form-right input:hover {
-  box-shadow: .1em .1em 1em rgba(53, 59, 72,0.19), -.1em -.1em 1em rgba(53, 59, 72,0.19);
+  box-shadow: .1em .1em 1em rgba(53, 59, 72,0.19), -.2em -.2em .3em rgba(53, 59, 72,0.19);
 }
 
 .form-headers {
