@@ -16,8 +16,6 @@
 
 <body>
 
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
 <!-- Sticky nav -->
 
 <div id="header">
@@ -74,6 +72,7 @@
 </div>
 
 <!-- A static form emulating a payment selection -->
+<form action="https://www.freecodecamp.com/email-submit">
 <div id="form" class="buy">
   <ul class="checkout-progress"> <!-- li will be transparent except for the li to give the impression that we are on the checkout step of payment -->
     <li><a href="#">Shopping Bag</a></li>
@@ -83,54 +82,58 @@
   
   <!-- Form left hand side with personal information entry-->
   <div id="form-left">
-    <p class="form-headers">Personal Information</p>
-    <label for="first-name" class="form-label-text">First Name <br />
-      <input type="text" name="firstname" id="first-name" placeholder="First Name" required>
-    </label>
-    <label for="last-name" class="form-label-text">Last name <br />
-      <input type="text" name="firstname" id="last-name" placeholder="Last Name" required>
-    </label>
-    <label for="email" class="form-label-text">Email Address <br />
-      <input type="email" name="email" placeholder="Email address" required>
-    </label>
-    <label for="street" class="form-label-text">Street name <br />
-      <input type="text" name="streetname" placeholder="Street name" required>
-    </label>
-    <label for="city" class="form-label-text">City <br />
-      <input type="text" name="city" placeholder="City" required>
-    </label>
-    <label for="country" class="form-label-text">Country<br />
-      <input type="text" name="country" placeholder="Country" required>
-    </label>
-    <label for="phone-number" id="personal-phone" class="form-label-text">Phone number <br />
-      <input type="tel" name="phonenumber" placeholder="Phone Number" required>
-    </label>
+
+      <p class="form-headers">Personal Information</p>
+      <label for="first-name" class="form-label-text">First Name <br />
+        <input type="text" name="firstname" id="first-name" placeholder="First Name" required>
+      </label>
+      <label for="last-name" class="form-label-text">Last name <br />
+        <input type="text" name="firstname" id="last-name" placeholder="Last Name" required>
+      </label>
+      <label for="email" class="form-label-text">Email Address <br />
+        <input type="email" name="email" placeholder="Email address" required>
+      </label>
+      <label for="street" class="form-label-text">Street name <br />
+        <input type="text" name="streetname" placeholder="Street name" required>
+      </label>
+      <label for="city" class="form-label-text">City <br />
+        <input type="text" name="city" placeholder="City" required>
+      </label>
+      <label for="country" class="form-label-text">Country<br />
+        <input type="text" name="country" placeholder="Country" required>
+      </label>
+      <label for="phone-number" id="personal-phone" class="form-label-text">Phone number <br />
+        <input type="tel" name="phonenumber" placeholder="Phone Number" required>
+      </label>
 
 
   </div>
 
 
   <!-- Form right hand side with an option to choose the XL or standard and credit card and submit -->
-  <div id="form-right">
-      <p class="form-headers">Payment and selection</p>
-      <a href="#" class="pickle-std">
-        <div>
-          <p>std</p>
+    <div id="form-right">
+        <p class="form-headers">Payment and selection</p>
+        <a href="#" class="pickle-std">
+          <div>
+            <p>std</p>
+            <p>pickle</p>
+          </div>
+        </a>
+        <a href="#" class="pickle-xl">
+          <div>
+          <p>xl</p>
           <p>pickle</p>
-        </div>
-      </a>
-      <a href="#" class="pickle-xl">
-        <div>
-        <p>xl</p>
-        <p>pickle</p>
-        </div>
-      </a>
-      <input type="button" name="submit" class="checkout-submit" placeholder="Submit" value="Purchase">
+          </div>
+        </a>
+        <input type="button" name="submit" class="checkout-submit" placeholder="Submit" value="Purchase">
 
-  </div>
+    </div>
 </div>
 
+</form>
 
+<!-- Enable the below script for the FCC test suite -->
+<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 
 <!-- User Story #7: My landing page has a form element with a corresponding id="form".
 User Story #8: Within the form, there is an input field with id="email" where I can enter an email address.
