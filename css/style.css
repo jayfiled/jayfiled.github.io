@@ -27,7 +27,7 @@ body {
   z-index: 1;
   top: 0px;
   background: var(--nav);
-  width: 80%;
+  width: 100%;
   height: 5em;
   display: flex;
   flex-direction: row;
@@ -97,7 +97,7 @@ h1 {
 
 #overview {
   position: relative;
-  width: 80%;
+  width: 100%;
   padding-top: 4em;
 }
 
@@ -118,7 +118,7 @@ h1 {
 }
 
 .overview {
-  width: 80%;
+  width: 100%;
 }
 
 .blurb {
@@ -150,11 +150,11 @@ h1 {
 #techspecs {
   position: relative;
   background: white;
-  width: 80%;
+  width: 100%;
 }
 
 .tech-specs {
-  width: 80%;
+  width: 100%;
 }
 
 #img-overview-overlay-specs {
